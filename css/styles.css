@@ -1,0 +1,398 @@
+/* Reset */
+*{	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, home, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*============================ 
+
+              CSS 
+              
+==============================*/
+
+/*============================ 
+
+            Header 
+              
+==============================*/
+.greeting {
+  text-align: center;
+  padding-top: 200px;
+  background: #ffd100;
+  color: #ffffff;
+}
+.greeting h1,.greeting p {
+  position: relative;
+  top: 30px;
+}
+.greeting h1 {
+  font-size: 6em;
+}
+.greeting p {
+  font-size: 1.5em;
+}
+/*=============================
+
+            Navigation
+
+==============================*/
+.home {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+nav li {
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+  display: inline-block;
+}
+.home a::before,
+.home a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.home a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #ffd100;
+  border-right: 3px solid #ffd100;
+  transform: translate(-100%, 50%);
+}
+
+.home a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #ffd100;
+  border-left: 3px solid #ffd100;
+  transform: translate(100%, -50%)
+}
+
+.home a:hover:before,
+.home a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.home a:hover {
+  color: #ffee32;
+}
+.home {
+  background: #d6d6d6;
+  padding: 30px 10px;
+}
+.home a{
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  padding: .5em .8em;
+  position: relative;
+}
+/*============================ 
+
+            Icons 
+              
+==============================*/
+.square {
+  text-align: center;
+  padding:100px 0px;
+  background: #d6d6d6;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon img{
+  width:300px;
+  margin:0 auto;
+  transition:.3s;
+}
+
+.icon img:hover{
+  box-shadow: 0px 0px 20px 15px #ffee32;
+  background: #ffee32;
+  border-radius: 150px;
+  transition: .3s;
+  visibility: visible;
+}
+/*============================ 
+
+           Footer
+              
+==============================*/
+footer p {
+  background: #333533;
+  padding: 50px;
+  color: #d6d6d6;
+  font-size: 1.2em;
+  text-align: center;
+}
+footer {
+  clear: both;
+}
+/*============================ 
+
+      Wakanda and Ralph
+              
+==============================*/
+
+body {
+  background: #d6d6d6;
+}
+.wakanda, .ralph {
+  width: 97%;
+  padding: 20px;
+}
+.wakanda article, .ralph article {
+  float: left;
+  padding: 30px 0px 30px 15px;
+  width: 65%;
+  background: #ffee32;
+}
+.wakanda article h2, .ralph article h2 {
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 10px;
+}
+.wakanda article figure, .ralph article figure {
+  float: left;
+}
+.wakanda article figure img, .ralph article figure img {
+  width: 600px;
+  padding-right: 20px;
+}
+.wakanda article figure figcaption, .ralph article figure figcaption{
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.wakanda article p, .ralph article p {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-size: 1em;
+  padding: 5px;
+  line-height: 30px;
+}
+.info {
+  background: #ffd100;
+}
+.wakanda aside, .ralph aside{
+  float: right;
+  width: 33%;
+  background: #202020;
+  color: #d6d6d6;
+}
+.wakanda aside h3, .ralph aside h3{
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 30px 0px 15px 15px;
+}
+.wakanda aside p, .ralph aside p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .9em;
+  line-height: 30px;
+  padding: 10px;
+}
+.wakanda aside figure, .ralph aside figure {
+  float: right;
+  padding: 10px;
+}
+.wakanda aside figure img, .ralph aside figure img {
+  width: 325px;
+  padding-bottom: 5px;
+}
+.ralph aside {
+  padding-top: 300px;
+}
+.wakanda aside figure figcaption, .ralph aside figure figcaption {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wakanda aside span {
+  font-size: 4.5em;
+  visibility: hidden;
+}
+.between{
+  font-size: 5em;
+  visibility: hidden;
+}
+.costume{
+  font-size: 22em;
+  visibility: hidden;
+}
+/*============================ 
+
+        Social Media
+              
+==============================*/
+.links{
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  display: flex;
+  height: 700px;
+  font-size: 2em;
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card {
+  pointer-events: none;
+  transform: translateZ(0);
+  padding: 30px;
+  background: #202020;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+  margin: 200px;
+  transform-style: preserve-3d;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+.card:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  bottom: -50px;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+}
+.card .card-content {
+  margin: auto;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+}
+
+.card a {
+  color: #ffd100;
+  pointer-events: auto;
+  text-decoration: none;
+  text-shadow: 2px 10px 30px #ffd100;
+}
+
+
+/*============================ 
+
+        Media Queries
+              
+==============================*/
+@media screen and (max-width: 1280px) {
+  article{ 
+      max-width: 900px;} 
+  section{
+      max-width: 1000px;
+  }
+  article img{
+      max-width: 250px;
+  }
+  aside img{
+      max-width: 150px
+  }
+}
+@media screen and (max-width: 900px) {
+  article{ 
+      max-width: 900px;} 
+  section{
+      max-width: 1000px;
+  }
+
+  article img{
+      max-width: 250px;
+  }
+  aside img{
+      max-width: 150px
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  article { 
+      max-width: 450px;
+  } 
+  section {
+      max-width: 800px;
+  }
+  article img {
+      max-width:420px;
+  }
+  aside img {
+      max-width: 210px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  article { 
+      max-width: 370px;
+  } 
+  section {
+      max-width: 700px;
+  }
+  article img {
+      max-width:350px;
+  }
+  aside img {
+      max-width: 170px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article { 
+      max-width: 310px;
+  } 
+  section {
+      max-width: 600px;
+  }
+  article img {
+      max-width:300px;
+  }
+  aside img {
+      max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  article { 
+      max-width: 298px;} 
+  section {
+      max-width: 500px;
+  }
+  article img {
+      max-width:290px;
+  }
+  aside img {
+      max-width: 130px;
+  }
+}
