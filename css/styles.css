@@ -227,6 +227,7 @@ body {
 .wakanda aside figure, .ralph aside figure {
   float: right;
   padding: 10px;
+  color: #d6d6d6;
 }
 .wakanda aside figure img, .ralph aside figure img {
   width: 325px;
@@ -235,6 +236,7 @@ body {
 .ralph aside {
   padding-top: 300px;
 }
+
 .wakanda aside figure figcaption, .ralph aside figure figcaption {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -321,6 +323,9 @@ body {
   aside img{
       max-width: 150px
   }
+  .card {
+    margin: 200px;
+  }
 }
 @media screen and (max-width: 900px) {
   article{ 
@@ -334,6 +339,9 @@ body {
   }
   aside img{
       max-width: 150px
+  }
+  .card {
+    margin: 50px;
   }
 }
 
@@ -351,6 +359,9 @@ body {
   aside img {
       max-width: 210px;
   }
+  .card {
+    margin: 50px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -365,6 +376,9 @@ body {
   }
   aside img {
       max-width: 170px;
+  }
+  .card {
+    margin: 50px;
   }
 }
 
@@ -381,6 +395,9 @@ body {
   aside img {
       max-width: 140px;
   }
+  .card {
+    margin: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -394,5 +411,8 @@ body {
   }
   aside img {
       max-width: 130px;
+  }
+  .card {
+    margin: 20px;
   }
 }
